@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="car"></p>
+    <script>
+        // Declaring variables using the var keyword
+        var x = 1;
+        var y = 2;
+        z = x + y;
+        console.log(z);
+        var price1 = 10;
+        var price2 = 10;
+        var total = price1 + price2;
+        console.log('$' + total)
+        var pi = 3.14;
+        var num = 1
+        var text = '3.14'
+        console.log(num + pi);
+        console.log(num + text);
+        
+        var carName = 'Toyota';
+        //carName = 'IST'
+        console.log(carName)
+        document.getElementById('car').innerHTML = 'Toyota';
+        var name = 'francis';
+        var name;
+        console.log(name)
+        // var x = 1 + 2 + 3 - 3;
+        // alert(x)
+        var x = 'John' + " " +  'Doe'
+        console.log(x)
+        var x = '5' + 2 + 3;
+        // alert(x)
+        var x = 2 + 3 + '5';
+        console.log(x)
+        // names 
+        var $$;
+       var  _name;
+       var firstName = 'francis', lastname = 'Doe', age = 35;
+       console.log(firstName,lastname,age);
+
+       // Declaring variables using let
+
+       let him = 1;
+       {
+           let value = 1;
+        //    console.log(value)
+       }
+
+    
+    //    console.log(value) can not be used because it is declared in a block
+        var value1 = 111111;
+        console.log(value1)
+        {
+            var value1;
+            value1 = 1111;
+            console.log(value1)
+        }
+        console.log(value1)
+
+       // using var for declaring variable names in block can raise improper values when reassigned a value 
+       // this can be overcome with using the let keyword
+        let things = 'things';
+        things = 'another thing'
+        console.log(things)
+
+       let value2;
+       value2 = 222;
+    //    value2 = 'another'
+       console.log(value2)
+       {
+           let value2 = 22222;
+           console.log(value2)
+       }
+       console.log(value2)
+       // declaring before use is possible with var keyword
+
+       francis = 'name';
+       var francis;
+    //    alert(francis)
+       // not possible with let keyword
+       
+       ayume = 'name';
+    //    let ayume; // error can not access ayume before initialization
+
+
+    // Declaring variables using const keyword
+
+    const PI= 'pi';
+    // PI = 5; displays error
+    // PI += 'added'; renders error
+    console.log(PI)
+    console.log(pi)
+
+
+    // must be assigned not declared
+
+    const tt = 12;
+    
+    const cars = ['Pajero','Landcruiser','V8'];
+    // const cars = ['1','2','3']; raises error
+    cars[0] = 'Toyota';
+    cars.push('Subaru')
+    console.log(cars)
+    
+    // const cars; renders error because it can not be reassigined
+
+    const car = {type:'Fiat',model:'500',color:'White'};
+    car.color = 'blue';
+    car.owner = 'francis';
+    console.log(car)
+    // const car = {type:'Fiat',model:'500',color:'White'}; raises error
+     
+    </script>
+</body>
+</html>

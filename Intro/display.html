@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- using a document.write to overide all document content after getting loaded -->
+    <button type="button" onclick="document.write('Overriding all document content with js')">overide</button>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+    <!--using window.print -->
+    <button type="button" onclick="window.print()">Print this page</button>
+    <p id="demo"></p>
+    
+    <script>
+        // displaying fourth paragraph using js
+        document.getElementById('demo').innerHTML = 'Third paragraph from js document.getElementById display'
+        // using document.write
+        document.write('francis')
+        // using window.alert
+        window.alert('Good Morning Visitor') // just plain alert('something')
+        // using console.log
+        console.log('Coming soon!')
+        
+    </script>
+</body>
+</html>
