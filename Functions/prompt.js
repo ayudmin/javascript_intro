@@ -34,4 +34,11 @@ if (true){
     console.log(x + y + z);
 }
 // y is not visible
-console.log(x + y);
+//console.log(x + y);
+
+function greet(who){
+    console.log('Hello, ' + who)
+}
+
+greet('Ayume!')
+
