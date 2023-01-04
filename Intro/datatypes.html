@@ -10,10 +10,14 @@
     <script>
         //  Datatypes in javascript
 
-        var isWeekEnd = true;
-        var needToShaworToday = ! isWeekEnd;
+        var isWeekEnd = false;
+        var needToShaworToday = true;
+        var hasApple = true;
+        var hasOrange = false;
 
-        console.log(needToShaworToday);
+        var willGoToSchool = !isWeekEnd && needToShaworToday && (hasApple || hasOrange);
+
+        console.log(willGoToSchool);
 
     </script>
 </body>
