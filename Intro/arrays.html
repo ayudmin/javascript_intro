@@ -9,22 +9,23 @@
 <body>
     <script>
 
-        var animals = [];
-        console.log(animals);
-        animals.push("Dog");
-        console.log(animals);
-        animals.push("Cat");
+        var furryAnimals = [
+            "Alpaca",
+            "Ring Tailed Remur",
+            "Yeti"
+        ];
 
-        animals.push("Donkey");
+        console.log(furryAnimals);
 
-        animals.push("Pig");
+        var scalyAnimals = [
+            "Bor constrictor",
+            "Godzilla"
+        ];
 
-        console.log(animals);
-        animals.shift();
-        console.log(animals);
+        console.log(scalyAnimals);
 
-
-
+        var furryAnimalsAndScalyAnimals = furryAnimals.concat(scalyAnimals);
+        console.log(furryAnimalsAndScalyAnimals);
 
     </script>
 </body>
